@@ -12,27 +12,14 @@
     Assembling a Repo
   </h1>
   <br><br>
-  Repositories are made completely in JSON, and are formatted like this:
+  Repositories are made completely in JSON. For a more complete outline, look at the repositories provided on GitHub.
   <br>
-  <code>
-  {<br>
-  "titlecard": "Repo Title",<br>
-  "results": [<br>
-    {<br>
-      "title": "Item Title",<br>
-      "des": "Description",<br>
-      "func": true,<br>
-      "approve": true,<br>
-      "utility": true,<br>
-      "secure": true,<br>
-      "group": true,<br>
-      "learn": true,<br>
-      "pro": true,<br>
-      "run": "action();"<br>
-    }<br>
-  ]<br>
-}<br>
-  </code>
+  <br>
+  "titlecard" is the title of the whole repository.
+  <br>
+  "results" is the array that contains the entire repository information in objects. The only item not in the array is "titlecard".
+  <br>
+  "title" is the title of an item. "des" is the description.
   <br>
   Elements "func" through "pro" are badges. These are booleans and can be removed if not needed.<br>
   "run" is the JavaScript function executed when the item is clicked on. Use "change(url)" to use the workspace.<br><br>
