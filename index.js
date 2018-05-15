@@ -68,8 +68,12 @@ function loadDone(url) {
       method: 'get'
     }).then((resp) => resp.json())
     .then(function(data) {
-    
-    var _newhtml = `<div class="titlecard"><div id="titletext">` + data.titlecard + `</div></div>`;
+        var _newhtml;
+        if (data.titlestyle === true) { 
+            _newhtml = `<div class="titlecard"><div id="titletext" style="` + data. + `">` + data.titlecard + `</div></div>`;
+        } else {
+            _newhtml = `<div class="titlecard"><div id="titletext">` + data.titlecard + `</div></div>`;
+        }
     
       for (q = 0; q < data.results.length; q++) {
         _newhtml += `<div class="item" onclick="` + data.results[q].run + `"><span class="title">` + data.results[q].title + "<div class=\"badges\">";
