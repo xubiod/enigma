@@ -43,7 +43,7 @@ function load() {
     var _newhtml = "";
     
       for (q = 0; q < data.results.length; q++) {
-        if (data.results[q].run === true) { _newhtml += `<div class="item"><a href="` + data.results[q].goto + `" target="_blank">` + data.results[q].name + " (" + data.results[q].file + `)</a><span title="Download" style="position: absolute; right: 4px;">` + _dwnld + `</span></div>`;}
+        if (data.results[q].run === true) { _newhtml += `<a href="` + data.results[q].goto + `" target="_blank"><div class="item">` + data.results[q].name + " (" + data.results[q].file + `)<span title="Download" style="position: absolute; right: 4px;">` + _dwnld + `</span></div></a>`;}
         else {_newhtml += `<div class="item" onclick="` + data.results[q].run + `">` + data.results[q].name + " (" + data.results[q].file + `)</div>`;}
       }
        
