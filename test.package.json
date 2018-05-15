@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "name": "This package file",
+      "file": "test.package.json",
+      "goto": "./test.package.json",
+      "run": true
+    },{
+      "name": "Generate fakes",
+      "file": "function",
+      "run": "generateFakes(prompt('how many?'))"
+    }
+  ]
+}
