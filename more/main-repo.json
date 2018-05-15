@@ -12,7 +12,7 @@
       "des": "You can check the JSON files you know, it's not hard.",
       "learn": true,
       "pro": true,
-      "run": "change('./assemble-repo.html');"
+      "run": "change('./more/assemble-repo.html');"
     },{
       "title": "Assembling a Package",
       "des": "You can still just look at JSON...",
