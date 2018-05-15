@@ -113,7 +113,7 @@ function loadDone(url) {
       _list.innerHTML = _newhtml;
         
     }).catch(function(err) {
-      var _newhtml = `<div class="titlecard"><div id="titletext">Invalid Repository</div></div>`;
+      var _newhtml = `<div class="titlecard"><div id="titletext">Error Encountered</div></div>`;
       _newhtml += `<div class="item"><span class="title">` + err.name + `</span><br>` + err.message + `</div>`;
       _newhtml += `<div class="item" onclick="loadDone(prompt('new url'))"><span class="title">Load another Repository</span></div>`;
       _list.innerHTML = _newhtml;
