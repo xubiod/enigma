@@ -19,7 +19,7 @@
       "des": "You can still just look at JSON...",
       "pro": true,
       "learn": true,
-      "run": "alert('wait a bit');"
+      "run": "change('./more/assemble-package.html');"
     }
   ]
 }
