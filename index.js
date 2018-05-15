@@ -68,7 +68,7 @@ function getQueryVariable(variable) {
 
 //the goooooood stuff
 function loadDone(url) {
-    if (firstTime) {
+    if (firsttime) {
         try {
             url = getQueryVariable('src');
         } catch(err) { /* proceed as normal */ }
