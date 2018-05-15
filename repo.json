@@ -1,0 +1,25 @@
+{
+  "titlecard": "Enigma",
+  "results": [
+    {
+      "title": "Unload",
+      "des": "Unloads the current item",
+      "utility": true,
+      "func": true,
+      "run": "unload();"
+    },
+    {
+      "title": "Generate Fake Clientside Entries",
+      "des": "Read the title.",
+      "utility": true,
+      "func": true,
+      "run": "generateFakes(prompt('how many?'));"
+    },
+    {
+      "title": "Package",
+      "des": "A item that loads other files.",
+      "group": true,
+      "run": "change('package.html?src=test.package.json');"
+    }
+  ]
+}
