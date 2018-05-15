@@ -1,6 +1,6 @@
 {
   "titlecard": "Enigma: More!",
-  "titlestyle": "background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);",
+  "titlestyle": "background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;",
   "results": [
     {
       "title": "Unload",
