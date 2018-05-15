@@ -1,0 +1,24 @@
+{
+  "titlecard": "Enigma: More!",
+  "results": [
+    {
+      "title": "Unload",
+      "des": "Unloads the current item",
+      "utility": true,
+      "func": true,
+      "run": "unload();"
+    },{
+      "title": "Assembling a Repo",
+      "des": "You can check the JSON files you know, it's not hard.",
+      "learn": true,
+      "pro": true,
+      "run": "alert('wait a bit');"
+    },{
+      "title": "Assembling a Package",
+      "des": "You can still just look at JSON...",
+      "pro": true,
+      "learn": true,
+      "run": "alert('wait a bit');"
+    }
+  ]
+}
