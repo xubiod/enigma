@@ -69,7 +69,7 @@ function loadDone(url) {
     }).then((resp) => resp.json())
     .then(function(data) {
         var _newhtml;
-        if (data.titlestyle === true) { 
+        if (data.titlestyle !== undefined) { 
             _newhtml = `<div class="titlecard"><div id="titletext" style="` + data. + `">` + data.titlecard + `</div></div>`;
         } else {
             _newhtml = `<div class="titlecard"><div id="titletext">` + data.titlecard + `</div></div>`;
