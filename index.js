@@ -72,7 +72,7 @@ function loadDone(url) {
         try {
             url = getQueryVariable('src');
         } catch(err) { /* proceed as normal */ }
-        firstTime = false;
+        firsttime = false;
     }
   document.getElementById("loadingscreen").style.display = "inital";
   
