@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Assembling a Repo</title>
+  
+  <link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+<body>
+  <h1>
+    Assembling a Repo
+  </h1>
+  <br>
+  Repositories are made completely in JSON, and are formatted like this:
+  <br>
+  <code>
+  {
+  "titlecard": "Repo Title",
+  "results": [
+    {
+      "title": "Item Title",
+      "des": "Description",
+      "func": true,
+      "approve": true,
+      "utility": true,
+      "secure": true,
+      "group": true,
+      "learn": true,
+      "pro": true,
+      "run": "action();"
+    }
+  ]
+}
+  </code>
+  <br>
+  Elements "func" through "pro" are badges. These are booleans and can be removed if not needed.<br>
+  "run" is the JavaScript function executed when the item is clicked on. Use "change(url)" to use the workspace.<br><br>
+  
+  <h2>Badges</h2>
+  <strong>func</strong> - Indicates a function that runs in the browser<br>
+  <strong>approve</strong> - Indicates an approved/verified item<br>
+  <strong>utility</strong> - Indicates a client side function<br>
+  <strong>secure</strong> - Indicates a private item (handling has to be done by file hoster)<br>
+  <strong>group</strong> - Indicates a package<br>
+  <strong>learn</strong> - Indicates a learning resource (like this><br>
+  <strong>pro</strong> - Adds a meaningless "PRO" badge<br>
+  
+</body>
+</html>
