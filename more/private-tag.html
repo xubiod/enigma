@@ -6,15 +6,29 @@
   <title>Private Badge Handling</title>
   
   <link rel="stylesheet" type="text/css" href="../index.css">
+  <style>
+    a {
+      font-weight: 600
+    }
+  </style>
 </head>
 <body>
   <h1>
     Private Badge Handling
   </h1>
-  <br>
   There is a "Private" tag, but nothing is done in the backend. This is a psuedo-guide on how to use it properly.
-  <h2>Handling</h2>
   <br>
+  <h2>Handling</h2>
   The way that private items are handled are dependent on the page loaded into the workspace, whether it's an IP address check or through OAuth methods. Please note that a non-OAuth method for usernames and passwords can be easy to crack.
-</body>
+  <br>
+  <h2>IP Address Checks</h2>
+  There are a few APIs that can do just that - return the request's public IP address. You want to make it JSON so you can <strong>fetch</strong> (vanilla JS) or <strong>$.getJSON()</strong> (jQuery).<br>
+  <a href="https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only" target="_blank">This</a> StackOverflow question's first answer has many APIs and jQuery snippets to use.
+  <br>
+  <h2>reCaptchas</h2>
+  Using Google's Captcha is one way to prevent spam and fruadulent requests from bots. You can get more information <a href="https://www.google.com/recaptcha/" target="_blank">on the official site.</a>
+  <br>
+  <h2>OAuth</h2>
+  OAuth has become the security standard for APIs, usernames and passwords. Visit the <a href="https://oauth.net/" target="_blank">official web site</a> for more information.
+  </body>
 </html>
