@@ -20,6 +20,12 @@
       "pro": true,
       "learn": true,
       "run": "change('./more/assemble-package.html');"
+    },{
+      "title": "Private Badge Handling",
+      "des": "How the \"Private\" is handled with some methods",
+      "pro": true,
+      "learn": true,
+      "run": "change('./more/private-tag.html');"
     }
   ]
 }
