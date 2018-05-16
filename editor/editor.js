@@ -38,7 +38,7 @@ if (true) {
 </svg></div>`;
 }
 var firstTime = true;
-
+var myCodeMirror;
 //document.getElementById("editor").addEventListener("update", loaded);
 
 function allowTabs() {
@@ -59,7 +59,7 @@ function allowTabs() {
 function makeEditor() {
   var myTextArea = document.getElementById("editor");
   
-  var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+  myCodeMirror = CodeMirror.fromTextArea(myTextArea);
   setTimeout(function() {
     myCodeMirror.refresh();
   }, 10);
