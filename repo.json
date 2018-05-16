@@ -10,11 +10,11 @@
       "run": "unload();"
     },
     {
-      "title": "Generate Fake Clientside Entries",
-      "des": "Read the title.",
+      "title": "Load Enigma: Tutorials repo",
+      "des": "Loads that repo.",
       "utility": true,
       "func": true,
-      "run": "generateFakes(prompt('how many?'));"
+      "run": "loadDone('./more/learn.json');"
     },
     {
       "title": "Package",
