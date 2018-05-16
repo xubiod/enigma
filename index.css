@@ -140,3 +140,8 @@ code {
   padding: 4px;
   font-family: monospace;
 }
+
+textarea {
+  font-family: monospace;
+  color: black;
+}
