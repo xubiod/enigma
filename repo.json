@@ -12,7 +12,6 @@
     {
       "title": "Load Enigma: Tutorials repo",
       "des": "Loads that repo.",
-      "utility": true,
       "func": true,
       "run": "loadDone('./more/learn.json');"
     },
