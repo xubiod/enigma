@@ -8,7 +8,8 @@
   <link rel="stylesheet" type="text/css" href="../index.css">
   <style>
     a {
-      font-weight: 600
+      font-weight: 600;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -21,14 +22,13 @@
   <h2>Handling</h2>
   The way that private items are handled are dependent on the page loaded into the workspace, whether it's an IP address check or through OAuth methods. Please note that a non-OAuth method for usernames and passwords can be easy to crack.
   <br>
-  <h2>IP Address Checks</h2>
-  There are a few APIs that can do just that - return the request's public IP address. You want to make it JSON so you can <strong>fetch</strong> (vanilla JS) or <strong>$.getJSON()</strong> (jQuery).<br>
-  <a href="https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only" target="_blank">This</a> StackOverflow question's first answer has many APIs and jQuery snippets to use.
+  <h3>IP Address Checks</h3>
+  There are a few APIs that can do just that - return the request's public IP address. You want to make it JSON so you can <strong>fetch</strong> (vanilla JS) or <strong>$.getJSON()</strong> (jQuery). <a href="https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only" target="_blank">This StackOverflow question's</a> first answer has many APIs and jQuery snippets to use.
   <br>
-  <h2>reCaptchas</h2>
+  <h3>reCaptchas</h3>
   Using Google's Captcha is one way to prevent spam and fruadulent requests from bots. You can get more information <a href="https://www.google.com/recaptcha/" target="_blank">on the official site.</a>
   <br>
-  <h2>OAuth</h2>
+  <h3>OAuth</h3>
   OAuth has become the security standard for APIs, usernames and passwords. Visit the <a href="https://oauth.net/" target="_blank">official web site</a> for more information.
   </body>
 </html>
