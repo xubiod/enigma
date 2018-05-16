@@ -38,7 +38,7 @@ if (true) {
 </svg></div>`;
 }
 var firstTime = true;
-var myCodeMirror;
+const flask = new CodeFlask('#editor', { language: 'js', lineNumbers: true });
 //document.getElementById("editor").addEventListener("update", loaded);
 
 function allowTabs() {
@@ -57,12 +57,9 @@ function allowTabs() {
 }
 
 function makeEditor() {
-  var myTextArea = document.getElementById("editor");
+  //var origin = document.getElementById("editor");
   
-  myCodeMirror = CodeMirror.fromTextArea(myTextArea);
-  setTimeout(function() {
-    myCodeMirror.refresh();
-  }, 10);
+  flask.updateCode('{\n\n}');
 }
 
 function loaded() {
