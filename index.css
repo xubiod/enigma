@@ -1,4 +1,4 @@
-* {
+*:not(.codemirror-code) {
     font-family: sans-serif;
     color: white;
 }
