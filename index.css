@@ -130,6 +130,5 @@ textarea {
 
 #editor {
     height: 85vh;
-    max-width: 95%;
     font-family: monospace;
 }
