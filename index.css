@@ -1,4 +1,4 @@
-.loadingscreen, .list, .workspace {
+*:not(.CodeMirror-line *, .CodeMirror-line * *) {
     font-family: sans-serif;
     color: white;
 }
