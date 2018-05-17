@@ -128,7 +128,36 @@ textarea {
     color: black;
 }
 
-#editor {
-    height: 85vh;
-    font-family: monospace;
+#editor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: #2f2f2f;
+  
+  z-index: calc(4096 * 2);
+}
+
+#editor, #editor-text {
+    height: 90vh;
+    font: monospace!important
+}
+
+.ace_content {
+  height: 90vh;
+  font: monospace!important
+}
+
+select, optgroup, option {
+  color: white;
+  background-color: black;
+}
+
+#theme-picker-container {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
 }
