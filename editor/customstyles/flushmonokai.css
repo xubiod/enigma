@@ -1,0 +1,123 @@
+/* 
+Original based on Sublime Text's Monokai theme 
+This CSS file is for Enigma's editor by xubiod 
+https://xubiod.github.io/enigma/editor
+*/
+
+.cm-s-flushmonokai.CodeMirror {
+    background: #2c2c2c;
+    color: #f8f8f2;
+}
+
+.cm-s-flushmonokai div.CodeMirror-selected {
+    background: #49483E;
+}
+
+.cm-s-flushmonokai .CodeMirror-line::selection,
+.cm-s-flushmonokai .CodeMirror-line>span::selection,
+.cm-s-flushmonokai .CodeMirror-line>span>span::selection {
+    background: rgba(73, 72, 62, .99);
+}
+
+.cm-s-flushmonokai .CodeMirror-line::-moz-selection,
+.cm-s-flushmonokai .CodeMirror-line>span::-moz-selection,
+.cm-s-flushmonokai .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(73, 72, 62, .99);
+}
+
+.cm-s-flushmonokai .CodeMirror-gutters {
+    background: #272822;
+    border-right: 0px;
+}
+
+.cm-s-flushmonokai .CodeMirror-guttermarker {
+    color: white;
+}
+
+.cm-s-flushmonokai .CodeMirror-guttermarker-subtle {
+    color: #d0d0d0;
+}
+
+.cm-s-flushmonokai .CodeMirror-linenumber {
+    color: #d0d0d0;
+}
+
+.cm-s-flushmonokai .CodeMirror-cursor {
+    border-left: 1px solid #f8f8f0;
+}
+
+.cm-s-flushmonokai span.cm-comment {
+    color: #75715e;
+}
+
+.cm-s-flushmonokai span.cm-atom {
+    color: #ae81ff;
+}
+
+.cm-s-flushmonokai span.cm-number {
+    color: #ae81ff;
+}
+
+.cm-s-flushmonokai span.cm-property,
+.cm-s-flushmonokai span.cm-attribute {
+    color: #a6e22e;
+}
+
+.cm-s-flushmonokai span.cm-keyword {
+    color: #f92672;
+}
+
+.cm-s-flushmonokai span.cm-builtin {
+    color: #66d9ef;
+}
+
+.cm-s-flushmonokai span.cm-string {
+    color: #e6db74;
+}
+
+.cm-s-flushmonokai span.cm-variable {
+    color: #f8f8f2;
+}
+
+.cm-s-flushmonokai span.cm-variable-2 {
+    color: #9effff;
+}
+
+.cm-s-flushmonokai span.cm-variable-3,
+.cm-s-flushmonokai span.cm-type {
+    color: #66d9ef;
+}
+
+.cm-s-flushmonokai span.cm-def {
+    color: #fd971f;
+}
+
+.cm-s-flushmonokai span.cm-bracket {
+    color: #f8f8f2;
+}
+
+.cm-s-flushmonokai span.cm-tag {
+    color: #f92672;
+}
+
+.cm-s-flushmonokai span.cm-header {
+    color: #ae81ff;
+}
+
+.cm-s-flushmonokai span.cm-link {
+    color: #ae81ff;
+}
+
+.cm-s-flushmonokai span.cm-error {
+    background: #f92672;
+    color: #f8f8f0;
+}
+
+.cm-s-flushmonokai .CodeMirror-activeline-background {
+    background: #373831;
+}
+
+.cm-s-flushmonokai .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}

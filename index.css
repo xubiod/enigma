@@ -148,14 +148,10 @@ textarea {
 }
 
 select,
+optgroup,
 option {
-    color: white;
+    color: #777;
     background-color: #1f1f1f;
-}
-
-optgroup {
-    background-color: white;
-    color: #1f1f1f;
 }
 
 #theme-picker-container {
