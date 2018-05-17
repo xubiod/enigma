@@ -48,6 +48,14 @@
     <!-- custom codemirror styles -->
     <link rel="stylesheet" href="./customstyles/flushmonokai.css" />
 
+    <!-- @FarhadG on GitHub -->
+    <link rel="stylesheet" href="http://farhadg.github.io/code-mirror-themes/themes/chrome-devtools.css" />
+    <link rel="stylesheet" href="http://farhadg.github.io/code-mirror-themes/themes/github.css" />
+    <link rel="stylesheet" href="http://farhadg.github.io/code-mirror-themes/themes/happy-happy-joy-joy-2.css" />
+
+    <link rel="stylesheet" href="http://farhadg.github.io/code-mirror-themes/themes/fake.css" />
+
+
     <!-- internal resources -->
     <script src="editor.js"></script>
     <link rel="stylesheet" type="text/css" href="../index.css">
@@ -78,11 +86,10 @@
         (No item selected)
     </div>
 
-    <div id="editor-container" style="text-align: left; display: block; font-size: 16px" cssignore>
-        Welcome to the Enigma Editor! This is more towards advanced users and for quick editing.
+    <div id="editor-container" style="text-align: left; display: block; font-size: 16px">
         <div id="theme-picker-container">Theme:
             <select id="theme-picker" onchange="changeTheme()">
-              <optgroup label="Light">
+              <optgroup label="Light (CodeMirror)">
                 <option value="3024-day">3024-Day</option>
                 <option value="base16-light">Base16-Light</option>
                 <option value="duotone-light">Duotone-Light</option>
@@ -91,7 +98,7 @@
                 <option value="idea">Idea</option>
                 <option value="mdn-like">MDN-Like</option>
               </optgroup>
-              <optgroup label="Dark">
+              <optgroup label="Dark (CodeMirror)">
                 <option value="3024-night">3024-Night</option>
                 <option value="abcdef">ABCDEF</option>
                 <option value="ambiance">Ambiance</option>
@@ -115,12 +122,19 @@
                 <option value="midnight">Midnight</option>
                 <option value="monokai">Monokai</option>
               </optgroup>
-              <optgroup label="Dark (custom)">
+              <optgroup label="Light (@FarhadG)">
+                  <option value="chrome-devtools">Chrome DevTools</option>
+                  <option value="github">GitHub</option>
+                  <option value="happy-happy-joy-joy-2">Happy Happy Joy Joy 2</option>
+              </optgroup>
+              <optgroup label="Dark (@FarhadG)">
+                  <option value="fake">Fake</option>
+              </optgroup>
+              <optgroup label="Dark (made for Enigma Editor)">
                 <option value="flushmonokai" selected>Flush Monokai (default)</option>
               </optgroup>
             </select>
         </div>
-        <br><br>
         <textarea id="editor-text">
         </textarea>
         <script src="coder.js"></script>

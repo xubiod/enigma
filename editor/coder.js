@@ -36,7 +36,7 @@ function codemirror() {
         theme: document.getElementById("theme-picker").value
     });
 
-    editor.setSize(null, "87.5vh");
+    editor.setSize(null, "92.5vh");
 }
 
 function changeTheme() {
