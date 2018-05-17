@@ -1,4 +1,4 @@
-*:not(.CodeMirror-line > *, .CodeMirror-line > * > *) {
+*:not(div > pre.CodeMirror-line > span, div > pre.CodeMirror-line > span > span) {
     font-family: sans-serif;
     color: white;
 }
