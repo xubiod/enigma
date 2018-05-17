@@ -1,4 +1,4 @@
-*:not(div > pre.CodeMirror-line > span, div > pre.CodeMirror-line > span > span) {
+.loadingscreen, .list, .workspace {
     font-family: sans-serif;
     color: white;
 }
