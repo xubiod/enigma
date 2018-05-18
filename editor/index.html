@@ -16,7 +16,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/keymap/sublime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/keymap/vim.min.js"></script>
 
-    <!-- dark themes -->
+    <!-- dark themes by codemirror -->
+    <cssgroup>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/3024-night.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/abcdef.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/ambiance.min.css" />
@@ -55,8 +56,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/vibrant-ink.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/xq-dark.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/zenburn.min.css" />
-
-    <!-- light themes -->
+    </cssgroup>
+      
+    <!-- light themes by codemirror -->
+    <cssgroup>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/3024-day.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/base16-light.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/duotone-light.min.css" />
@@ -71,12 +74,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/ttcn.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/xq-light.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/yeti.min.css" />
-
-    <!-- @FarhadG on GitHub -->
+    </cssgroup>
+  
+    <!-- @FarhadG on GitHub: LIGHT -->
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/all-hallow-eve.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/amy.css" />
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/chrome-devtools.css" />
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/github.css" />
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/happy-happy-joy-joy-2.css" />
 
+    <!-- @FarhadG on GitHub: DARK -->
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/fake.css" />
 
     <!-- custom codemirror styles -->
@@ -86,7 +93,6 @@
     <!-- internal resources -->
     <script src="editor.js"></script>
     <link rel="stylesheet" type="text/css" href="../index.css">
-
 
     <script>
         function swapMode() {
@@ -100,6 +106,14 @@
                 _editing = !_editing;
             }
         }
+      
+      function toggleConfig() {
+        if (document.getElementById("config-container").style.display == "none") {
+          document.getElementById("config-container").style.display = "block";
+        } else {
+          document.getElementById("config-container").style.display = "none";
+        }
+      }
     </script>
 </head>
 
@@ -113,16 +127,19 @@
         (No item selected)
     </div>
 
-    <div id="editor-container" style="text-align: left; display: block; font-size: 16px">
-        <div id="theme-picker-container">
+    <div id="editor-container" style="text-align: left; font-size: 16px">
+        <div id="config-container" style="display: none">
+          <strong>Configuration</strong>
+          <br><br>
           Bindings:
-            <select id="binding-picker" onchange="changeKeyBinds()">
+            <select id="binding-picker" onchange="saveSettings()">
               <option value="default" selected>Default</option>
               <option value="emacs">Emacs</option>
               <option value="sublime">Sublime Text</option>
               <option value="vim">Vim</option>
           </select>
-          
+          <br>
+          <br>
           Theme:
             <select id="theme-picker" onchange="changeTheme()">
               <optgroup label="Light (CodeMirror)">
@@ -188,6 +205,8 @@
                   <option value="happy-happy-joy-joy-2">Happy Happy Joy Joy 2</option>
               </optgroup>
               <optgroup label="Dark (@FarhadG)">
+                  <option value="all-hallow-eve">All Hallow Eve</option>
+                  <option value="amy">Amy</option>
                   <option value="fake">Fake</option>
               </optgroup>
               <optgroup label="Dark (made for Enigma Editor)">
@@ -195,10 +214,22 @@
                 <option value="orangesicle">Orangesicle</option>
               </optgroup>
             </select>
+          <br>
+          <br>
+          Indent Unit: <input type=text id="indentUnit" value="2" onkeyup="saveSettings()" >
+          Tab Size: <input type=text id="tabSize" value="4" onkeyup="saveSettings()" >
+          Cursor Height: <input type=text id="cursorHeight" value="1" onkeyup="saveSettings()" >
+          <br>
+          <br>
+          <input type=checkbox id="lineNumbers" value=true onclick="saveSettings()" checked>Show line numbers
         </div>
         <textarea id="editor-text">
         </textarea>
         <script src="coder.js"></script>
+      
+      <button style="position: fixed; bottom: 8px; right: 8px; z-index: 9999; color: black" onclick="toggleConfig()">
+    Show/Hide Configuration
+  </button>
     </div>
 
     <button style="position: fixed; bottom: 8px; left: 8px; z-index: 9999; color: black" onclick="swapMode()">

@@ -31,9 +31,13 @@ function ace() {
 
 function codemirror() {
     editor = CodeMirror.fromTextArea(document.getElementById("editor-text"), {
-        lineNumbers: true,
         mode: "javascript",
-        theme: document.getElementById("theme-picker").value
+        theme: document.getElementById("theme-picker").value,
+        lineNumbers: document.getElementById('lineNumbers').checked,
+        tabSize: document.getElementById('tabSize').value,
+        indentUnit: document.getElementById('indentUnit').value,
+        keyMap: document.getElementById('binding-picker').value,
+        cursorHeight: document.getElementById('cursorHeight').value,
     });
 
     editor.setSize(null, "92.5vh");
@@ -43,8 +47,9 @@ function changeTheme() {
     editor.setOption('theme', document.getElementById('theme-picker').value);
 }
 
-function changeKeyBinds() {
-    editor.setOption('keyMap', document.getElementById('binding-picker').value);
+function saveSettings() {
+    editor.toTextArea();
+    codemirror();
 }
 
 codemirror();
