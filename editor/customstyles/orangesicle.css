@@ -1,0 +1,29 @@
+/*orangesicle
+CodeMirror theme file created with CodeMirror-Themes
+https://github.com/mkaminsky11/codemirror-themes*/
+.cm-s-orangesicle.CodeMirror{background:rgba(136,85,0,1) !important;}
+.cm-s-orangesicle.CodeMirror{color:rgba(255,192,0,1) !important;}
+.cm-s-orangesicle div.CodeMirror-selected{background:rgba(255,0,0,.125) !important;}
+.cm-s-orangesicle .CodeMirror-gutters{background:rgba(161,87,0,1) !important;}
+.cm-s-orangesicle .CodeMirror-guttermarker{color:rgba(255,246,0,1) !important;}
+.cm-s-orangesicle .CodeMirror-guttermarker-subtle{color:rgba(208,208,208,1) !important;}
+.cm-s-orangesicle .CodeMirror-linenumber{color:rgba(255,246,0,1) !important;}
+.cm-s-orangesicle .CodeMirror-cursor{border-color:rgba(248,248,242,1) !important;}
+.cm-s-orangesicle span.cm-comment{color:rgba(255,255,255,.25) !important;}
+.cm-s-orangesicle span.cm-atom{color:rgba(224,108,34,1) !important;}
+.cm-s-orangesicle span.cm-number{color:rgba(236,155,47,1) !important;}
+.cm-s-orangesicle span.cm-property{color:rgba(166,226,46,1) !important;}
+.cm-s-orangesicle span.cm-attribute{color:rgba(246,252,15,1) !important;}
+.cm-s-orangesicle span.cm-keyword{color:rgba(249,127,38,1) !important;}
+.cm-s-orangesicle span.cm-string{color:rgba(241,226,82,1) !important;}
+.cm-s-orangesicle span.cm-string-2{color:rgba(200,200,68,1) !important;}
+.cm-s-orangesicle span.cm-variable{color:rgba(248,248,242,1) !important;}
+.cm-s-orangesicle span.cm-variable-2{color:rgba(201,240,20,1) !important;}
+.cm-s-orangesicle span.cm-def{color:rgba(253,151,31,1) !important;}
+.cm-s-orangesicle span.cm-bracket{color:rgba(248,248,242,1) !important;}
+.cm-s-orangesicle span.cm-tag{color:rgba(206,177,46,1) !important;}
+.cm-s-orangesicle span.cm-link{color:rgba(143,226,42,1) !important;}
+.cm-s-orangesicle span.cm-error{background:rgba(249,38,114,1) !important;}
+.cm-s-orangesicle span.cm-error{color:rgba(248,248,240,1) !important;}
+.cm-s-orangesicle .CodeMirror-activeline-background{color:rgba(237,14,14,1) !important;}
+.cm-s-orangesicle .CodeMirror-matchingbracket{color:rgba(255,255,255,1) !important;}
