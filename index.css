@@ -158,9 +158,15 @@ optgroup {
     background-color: #111;
 }
 
-#theme-picker-container {
+#config-container {
+    background-color: #242424c4;
+    padding: 2em;
     position: fixed;
-    bottom: 8px;
-    right: 8px;
+    top: 8px;
+    left: 8px;
     z-index: 9999;
+}
+
+#config-container>input[type="text"] {
+  width: 24px;
 }
