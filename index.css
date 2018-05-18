@@ -148,10 +148,14 @@ textarea {
 }
 
 select,
-optgroup,
 option {
     color: #777;
     background-color: #1f1f1f;
+}
+
+optgroup {
+    color: #777;
+    background-color: #111;
 }
 
 #theme-picker-container {
@@ -159,8 +163,4 @@ option {
     bottom: 8px;
     right: 8px;
     z-index: 9999;
-}
-
-div.CodeMirror-code div pre.CodeMirror-line span {
-    font-family: monospace;
 }
