@@ -39,6 +39,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/mbo.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/midnight.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/monokai.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/night.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/oceanic-next.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/panda-syntax.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/paraiso-dark.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/pastel-on-dark.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/railscasts.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/rubyblue.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/seti.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/shadowfox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/the-matrix.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/tomorrow-night-bright.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/tomorrow-night-eighties.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/twilight.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/vibrant-ink.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/xq-dark.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/zenburn.min.css" />
 
     <!-- light themes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/3024-day.min.css" />
@@ -48,9 +64,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/elegant.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/idea.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/mdn-like.min.css" />
-
-    <!-- custom codemirror styles -->
-    <link rel="stylesheet" href="./customstyles/flushmonokai.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/neat.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/neo.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/paraiso-light.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/solarized.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/ttcn.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/xq-light.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/yeti.min.css" />
 
     <!-- @FarhadG on GitHub -->
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/chrome-devtools.css" />
@@ -59,7 +79,9 @@
 
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/fake.css" />
 
-
+    <!-- custom codemirror styles -->
+    <link rel="stylesheet" href="./customstyles/flushmonokai.css" />
+  
     <!-- internal resources -->
     <script src="editor.js"></script>
     <link rel="stylesheet" type="text/css" href="../index.css">
@@ -103,37 +125,61 @@
           Theme:
             <select id="theme-picker" onchange="changeTheme()">
               <optgroup label="Light (CodeMirror)">
-                <option value="3024-day">3024-Day</option>
-                <option value="base16-light">Base16-Light</option>
-                <option value="duotone-light">Duotone-Light</option>
+                <option value="3024-day">3024 Day</option>
+                <option value="base16-light">Base16 Light</option>
+                <option value="default">CodeMirror Default</option>
+                <option value="duotone-light">Duotone Light</option>
                 <option value="eclipse">Eclipse</option>
                 <option value="elegant">Elegant</option>
                 <option value="idea">Idea</option>
                 <option value="mdn-like">MDN-Like</option>
+                <option value="neat">Neat</option>
+                <option value="neo">Neo</option>
+                <option value="paraiso-light">Paraiso Light</option>
+                <option value="solarized">Solarized</option>
+                <option value="ttcn">TTCN</option>
+                <option value="xq-light">XQ Light</option>
+                <option value="yeti">Yeti</option>
               </optgroup>
               <optgroup label="Dark (CodeMirror)">
-                <option value="3024-night">3024-Night</option>
+                <option value="3024-night">3024 Night</option>
                 <option value="abcdef">ABCDEF</option>
                 <option value="ambiance">Ambiance</option>
-                <option value="base16-dark">Base16-Dark</option>
+                <option value="base16-dark">Base16 Dark</option>
                 <option value="bespin">Bespin</option>
                 <option value="blackboard">Blackboard</option>
                 <option value="cobalt">Cobalt</option>
                 <option value="colorforth">Colorforth</option>
                 <option value="dracula">Dracula</option>
-                <option value="duotone-dark">Duotone-Dark</option>
-                <option value="erlang-dark">Erlang-Dark</option>
-                <option value="gruvbox-dark">Gruvbox-Dark</option>
+                <option value="duotone-dark">Duotone Dark</option>
+                <option value="erlang-dark">Erlang Dark</option>
+                <option value="gruvbox-dark">Gruvbox Dark</option>
                 <option value="hopscotch">Hopscotch</option>
                 <option value="icecoder">Icecoder</option>
                 <option value="isotope">Isotope</option>
-                <option value="lesser-dark">Lesser-Dark</option>
+                <option value="lesser-dark">Lesser Dark</option>
                 <option value="liquibyte">Liquibyte</option>
                 <option value="lucario">Lucario</option>
                 <option value="material">Material</option>
                 <option value="mbo">Mbo</option>
                 <option value="midnight">Midnight</option>
                 <option value="monokai">Monokai</option>
+                <option value="night">Night</option>
+                <option value="oceanic-next">Oceanic Next</option>
+                <option value="panda-syntax">Panda Syntax</option>
+                <option value="paraiso-dark">Paraiso Dark</option>
+                <option value="pastel-on-dark">Pastel on Dark</option>
+                <option value="railscasts">Railscasts</option>
+                <option value="rubyblue">Rubyblue</option>
+                <option value="seti">Seti</option>
+                <option value="shadowfox">Shadowfox</option>
+                <option value="the-matrix">The Matrix</option>
+                <option value="tomorrow-night-bright">Tomorrow Night: Bright</option>
+                <option value="tomorrow-night-eighties">Tomorrow Night: 80s</option>
+                <option value="twilight">Twilight</option>
+                <option value="vibrant-ink">Vibrant Ink</option>
+                <option value="xq-dark">XQ Dark</option>
+                <option value="zenburn">Zenburn</option>
               </optgroup>
               <optgroup label="Light (@FarhadG)">
                   <option value="chrome-devtools">Chrome DevTools</option>
