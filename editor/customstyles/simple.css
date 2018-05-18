@@ -1,0 +1,29 @@
+﻿/*simple
+CodeMirror theme file created with CodeMirror-Themes
+https://github.com/mkaminsky11/codemirror-themes*/
+.cm-s-simple.CodeMirror{background:rgba(0,0,0,1) !important;}
+.cm-s-simple.CodeMirror{color:rgba(255,255,255,1) !important;}
+.cm-s-simple div.CodeMirror-selected{background:rgba(255,255,255,1) !important;}
+.cm-s-simple .CodeMirror-gutters{background:rgba(255,255,255,1) !important;}
+.cm-s-simple .CodeMirror-guttermarker{color:rgba(0,0,0,1) !important;}
+.cm-s-simple .CodeMirror-guttermarker-subtle{color:rgba(0,0,0,1) !important;}
+.cm-s-simple .CodeMirror-linenumber{color:rgba(0,0,0,1) !important;}
+.cm-s-simple .CodeMirror-cursor{border-color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-comment{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-atom{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-number{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-property{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-attribute{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-keyword{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-string{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-string-2{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-variable{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-variable-2{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-def{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-bracket{color:rgba(234,234,234,1) !important;}
+.cm-s-simple span.cm-tag{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-link{color:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-error{background:rgba(255,255,255,1) !important;}
+.cm-s-simple span.cm-error{color:rgba(255,255,255,1) !important;}
+.cm-s-simple .CodeMirror-activeline-background{color:rgba(255,255,255,1) !important;}
+.cm-s-simple .CodeMirror-matchingbracket{color:rgba(255,255,255,1) !important;}

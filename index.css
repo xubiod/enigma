@@ -1,3 +1,8 @@
+@font-face {
+    src: url("http://laemeur.sdf.org/fonts/MorePerfectDOSVGA.ttf");
+    font-family: 'DOS'
+}
+
 body {
     font-family: sans-serif;
     color: white;
@@ -168,5 +173,5 @@ optgroup {
 }
 
 #config-container>input[type="text"] {
-  width: 24px;
+    width: 24px;
 }

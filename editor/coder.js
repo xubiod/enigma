@@ -11,9 +11,12 @@ document.getElementById("editor-text").innerHTML = `{
     ]
 }`
 
+document.getElementById("force-font-picker").value = "monospace";
+
 var editor;
 var _editing = true;
 
+/*
 function ace() {
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/monokai");
@@ -28,11 +31,12 @@ function ace() {
         ele.style.fontFamily = "monospace";
     }
 }
+*/
 
 function codemirror() {
     editor = CodeMirror.fromTextArea(document.getElementById("editor-text"), {
         mode: "javascript",
-        theme: document.getElementById("theme-picker").value,
+        theme: document.getElementById("theme-picker").value + " forcefont",
         lineNumbers: document.getElementById('lineNumbers').checked,
         tabSize: document.getElementById('tabSize').value,
         indentUnit: document.getElementById('indentUnit').value,
@@ -44,12 +48,21 @@ function codemirror() {
 }
 
 function changeTheme() {
-    editor.setOption('theme', document.getElementById('theme-picker').value);
+    editor.setOption('theme', document.getElementById('theme-picker').value + " forcefont");
 }
 
 function saveSettings() {
     editor.toTextArea();
     codemirror();
+}
+
+function forcefont() {
+    //div.CodeMirror-code div pre.CodeMirror-line span
+    var ele = document.getElementsByClassName("cm-s-forcefont");
+
+    for (var q = 0; q < ele.length; q++) {
+        ele[q].style.fontFamily = document.getElementById("force-font-picker").value;
+    }
 }
 
 codemirror();
