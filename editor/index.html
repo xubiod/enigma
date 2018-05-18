@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/javascript/javascript.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/keymap/emacs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/keymap/sublime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/keymap/vim.min.js"></script>
 
     <!-- dark themes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/theme/3024-night.min.css" />
@@ -87,7 +91,16 @@
     </div>
 
     <div id="editor-container" style="text-align: left; display: block; font-size: 16px">
-        <div id="theme-picker-container">Theme:
+        <div id="theme-picker-container">
+          Bindings:
+            <select id="binding-picker" onchange="changeKeyBinds()">
+              <option value="default" selected>Default</option>
+              <option value="emacs">Emacs</option>
+              <option value="sublime">Sublime Text</option>
+              <option value="vim">Vim</option>
+          </select>
+          
+          Theme:
             <select id="theme-picker" onchange="changeTheme()">
               <optgroup label="Light (CodeMirror)">
                 <option value="3024-day">3024-Day</option>

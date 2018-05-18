@@ -43,4 +43,8 @@ function changeTheme() {
     editor.setOption('theme', document.getElementById('theme-picker').value);
 }
 
+function changeKeyBinds() {
+    editor.setOption('keyMap', document.getElementById('binding-picker').value);
+}
+
 codemirror();
