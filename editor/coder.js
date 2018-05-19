@@ -15,6 +15,7 @@ document.getElementById("force-font-picker").value = "monospace";
 
 var editor;
 var _editing = true;
+var _config = false;
 
 /*
 function ace() {

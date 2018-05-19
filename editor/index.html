@@ -79,13 +79,20 @@
     </cssgroup>
 
     <!-- @FarhadG on GitHub: LIGHT -->
-    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/all-hallow-eve.css" />
-    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/amy.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/arona.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/bbedit.css" />
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/chrome-devtools.css" />
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/github.css" />
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/happy-happy-joy-joy-2.css" />
 
     <!-- @FarhadG on GitHub: DARK -->
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/all-hallow-eve.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/amy.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/argonaut.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/birds-of-paradise.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/black-pearl.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/black-pearl-ii.css" />
+    <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/bongzilla.css" />
     <link rel="stylesheet" href="https://farhadg.github.io/code-mirror-themes/themes/fake.css" />
 
     <!-- custom codemirror styles -->
@@ -155,7 +162,7 @@
                 <option value="neat">Neat</option>
                 <option value="neo">Neo</option>
                 <option value="paraiso-light">Paraiso Light</option>
-                <option value="solarized">Solarized</option>
+                <option value="solarized">Solarized Light</option>
                 <option value="ttcn">TTCN</option>
                 <option value="xq-light">XQ Light</option>
                 <option value="yeti">Yeti</option>
@@ -192,6 +199,7 @@
                 <option value="rubyblue">Rubyblue</option>
                 <option value="seti">Seti</option>
                 <option value="shadowfox">Shadowfox</option>
+                <option value="solarized dark">Solarized Dark</option>
                 <option value="the-matrix">The Matrix</option>
                 <option value="tomorrow-night-bright">Tomorrow Night: Bright</option>
                 <option value="tomorrow-night-eighties">Tomorrow Night: 80s</option>
@@ -200,14 +208,21 @@
                 <option value="xq-dark">XQ Dark</option>
                 <option value="zenburn">Zenburn</option>
               </optgroup>
-              <optgroup label="Light (@FarhadG)">
+              <optgroup label="Light (selected, made by @FarhadG)">
+                  <option value="arona">Arona</option>
+                  <option value="bbedit">BBEdit</option>
                   <option value="chrome-devtools">Chrome DevTools</option>
                   <option value="github">GitHub</option>
                   <option value="happy-happy-joy-joy-2">Happy Happy Joy Joy 2</option>
               </optgroup>
-              <optgroup label="Dark (@FarhadG)">
+              <optgroup label="Dark (selected, made by @FarhadG)">
                   <option value="all-hallow-eve">All Hallow Eve</option>
                   <option value="amy">Amy</option>
+                  <option value="argonaut">Argonaut</option>
+                  <option value="birds-of-paradise">Birds of Paradise</option>
+                  <option value="black-pearl">Black Pearl</option>
+                  <option value="black-pearl-ii">Black Pearl II</option>
+                  <option value="bongzilla">Bongzilla</option>
                   <option value="fake">Fake</option>
               </optgroup>
               <optgroup label="Dark (made for Enigma Editor)">
@@ -217,14 +232,21 @@
               </optgroup>
             </select>
             <br>
-            <br> Force font: <select id="force-font-picker" onchange="forcefont()">
-              <option value="'Anonymous Pro'">Anonymous Pro</option>
-              <option value="'DOS'">More Perfect DOS VGA</option>
+            <br> Force font: 
+          <select id="force-font-picker" onchange="forcefont()">
+            <optgroup label="CSS Defaults">
               <option value="monospace" selected>Monospace (default)</option>
+            </optgroup>
+            <optgroup label="Google Fonts">
+              <option value="'Anonymous Pro'">Anonymous Pro</option>
               <option value="'Overpass Mono'">Overpass Mono</option>
               <option value="'Share Tech Mono'">Share Tech Mono</option>
               <option value="'Source Code Pro'">Source Code Pro</option>
               <option value="'Ubuntu Mono'">Ubuntu Mono</option>
+            </optgroup>
+            <optgroup label="Other (can load rather slow)">
+              <option value="'DOS'">More Perfect DOS VGA</option>
+            </optgroup>
             </select>
             <br>
             <br> Indent Unit: <input type=text id="indentUnit" value="2" onkeyup="saveSettings()"> Tab Size: <input type=text id="tabSize" value="4" onkeyup="saveSettings()"> Cursor Height: <input type=text id="cursorHeight" value="1" onkeyup="saveSettings()">
