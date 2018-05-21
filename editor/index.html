@@ -8,7 +8,7 @@
     <title>Enigma Editor</title>
 
     <!-- external resources -->
-    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Overpass+Mono|Share+Tech+Mono|Source+Code+Pro|Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Inconsolata|Overpass+Mono|Share+Tech+Mono|Source+Code+Pro|Ubuntu+Mono" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js"></script>
@@ -141,7 +141,7 @@
         <div id="config-container" style="display: none">
             <strong>Configuration</strong>
             <br><br> Bindings:
-            <select id="binding-picker" onchange="saveSettings()">
+            <select id="binding-picker" onchange="saveSettings()" title="Changes what key combinations do.">
               <option value="default" selected>Default</option>
               <option value="emacs">Emacs</option>
               <option value="sublime">Sublime Text</option>
@@ -149,7 +149,7 @@
           </select>
             <br>
             <br> Theme:
-            <select id="theme-picker" onchange="changeTheme()">
+            <select id="theme-picker" onchange="changeTheme()" title="Changes the appearance of the editor. There are many themes to choose from.">
               <optgroup label="Light (CodeMirror)">
                 <option value="3024-day">3024 Day</option>
                 <option value="base16-light">Base16 Light</option>
@@ -233,12 +233,15 @@
             </select>
             <br>
             <br> Force font: 
-          <select id="force-font-picker" onchange="forcefont()">
-            <optgroup label="CSS Defaults">
+          <select id="force-font-picker" onchange="forcefont()" title="Sets the font of the editor. Please note that you may need to refresh the theme selection for proper text selection.">
+            <optgroup label="Web Safe Fonts">
+              <option value="'Courier New', Courier, monospace">Courier New</option>
+              <option value="'Lucida Console', Monaco, monospace">Lucida Console</option>
               <option value="monospace" selected>Monospace (default)</option>
             </optgroup>
             <optgroup label="Google Fonts">
               <option value="'Anonymous Pro'">Anonymous Pro</option>
+              <option value="'Inconsolata'">Inconsolata</option>
               <option value="'Overpass Mono'">Overpass Mono</option>
               <option value="'Share Tech Mono'">Share Tech Mono</option>
               <option value="'Source Code Pro'">Source Code Pro</option>
