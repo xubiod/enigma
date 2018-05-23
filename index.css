@@ -1,5 +1,5 @@
 @font-face {
-    src: url("http://laemeur.sdf.org/fonts/MorePerfectDOSVGA.ttf");
+    src: url("https://laemeur.sdf.org/fonts/MorePerfectDOSVGA.ttf");
     font-family: 'DOS'
 }
 
@@ -168,10 +168,14 @@ optgroup {
     padding: 2em;
     position: fixed;
     top: 8px;
-    left: 8px;
+    right: 8px;
     z-index: 9999;
 }
 
 #config-container>input[type="text"] {
     width: 24px;
+}
+
+#config-container>input[type="number"] {
+    width: 48px;
 }
