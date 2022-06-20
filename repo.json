@@ -16,6 +16,12 @@
       "run": "loadDone('./more/learn.json');"
     },
     {
+      "title": "Load Enigma Editor",
+      "des": "Opens an editor environment for Enigma.",
+      "func": true,
+      "run": "window.open(\"https://xubiod.github.io/enigma/editor/\", "_blank");"
+    },
+    {
       "title": "Package",
       "des": "A item that loads other files.",
       "group": true,
